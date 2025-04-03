@@ -13,7 +13,7 @@ editor: visual
 #Downloading File
 
 ```{r}
-{
+
 library(tidyverse)
 library(tidymodels)
 library(powerjoin)
@@ -21,11 +21,11 @@ library(glue)
 library(vip)
 library(baguette)
 echo = FALSE
-}
+
 ```
 
 ```{r}
-root <- root  <- 'https://gdex.ucar.edu/dataset/camels/file'
+root <-'https://gdex.ucar.edu/dataset/camels/file'
 download.file('https://gdex.ucar.edu/dataset/camels/file/camels_attributes_v2.0.pdf',
               'data/camels_attributes_v2.0.pdf')
 types <- c("clim", "geol", "soil", "topo", "vege", "hydro")
